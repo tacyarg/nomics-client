@@ -6,7 +6,7 @@ module.exports = (config = {}) => {
   assert(config.baseUrl, "config.baseUrl required");
 
   const fetchJSON = (url, params) =>{
-      console.log(url, params)
+      // console.log(url, params)
       return fetch(url, params)
       .then(res => {
         assert(res.ok, `${res.status} - ${res.statusText}`)
